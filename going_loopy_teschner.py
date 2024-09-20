@@ -4,16 +4,17 @@ while age <= 16:
     age = age + 2
 print("You have reached my age!")
 
-ingredients = ['turkey', 'lettuce', 'mayo', 'tomato']
-for ingredient in ingredients:
-    print(f"Adding {ingredient}")
+
+x = 1
+results = ['turkey', 'lettuce', 'mayo', 'tomato', 'cheese']
+for i in results:
+    print(f"{x} {i}")
+    x = x + 1
 
 print("Your sandwhich is done!")
 
-weight = 70
-math_weight = 0.165
-rate = 1
-moon_weight = weight
-for year in range(1,15):
-    moon_weight = moon_weight + rate
-    print("Year %s = %s" % (year, moon_weight))
+weight = 160
+for year in range(1, 16):
+    weight = weight + 1
+    moon_weight = weight * 0.165
+    print(f"Year {year} is {moon_weight}")
